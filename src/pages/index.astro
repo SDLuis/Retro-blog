@@ -1,14 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
+import Navbar from '../components/navbar.astro'
+import Header from '../components/header.astro'
 ---
 
 <Layout title='Welcome to Astro.'>
 	<main>
-		<h2 class='font-PODIUMSharp'>The quick brown fox jumps</h2>
-		<p class='font-Skie'>
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<p class='font-NothBlock'>Noth Block</p>
+		<Navbar />
+		<Header />
 	</main>
 </Layout>
