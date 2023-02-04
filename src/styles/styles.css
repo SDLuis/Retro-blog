@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PODIUMSharp';
+  src: url('../assets/fonts/PODIUMSharp-3.8/PODIUMSharp-3.8.otf');
+}
+@font-face {
+  font-family: 'Skie Condensed';
+  src: url('../assets/fonts/skie-cufonfonts/Adam\ Ladd\ \ Skie\ Condensed\ Regular.otf');
+}
+@font-face {
+  font-family: 'North Block';
+  src: url('../assets/fonts/North-Block/BoxTube\ Labs\ -\ North\ Block.ttf');
+}
