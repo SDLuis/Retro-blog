@@ -1,0 +1,34 @@
+---
+import headerImg from '../assets/imgs/header-img.jpg'
+
+const retro = ['retro', 'retro', 'retro', 'retro', 'retro', 'retro', 'retro']
+---
+<div class='border-2 border-[#1F201F] flex w-full rounded-sm h-[410px]'>
+	<div class='relative w-[50%] overflow-y-hidden '>
+		<img class='w-full object-cover' src={headerImg} />
+		<div class='absolute flex flex-col gap-7 right-2 top-2'>
+			{ retro.map(() => (
+				<div class='bg-white px-2 py-0.5 -rotate-90 border-2 border-black'>
+					<p class='font-PODIUMSharp text-lg'>Retro</p>
+				</div>
+			))
+			}
+		</div>
+	</div>
+	<div class='h-full border-2 border-black' />
+	<div class='flex-1 px-5 py-5'>
+    <p class='font-PODIUMSharp capitalize text-4xl tracking-wide py-5'>Something that <span class='font-PODIUMSharp bg-retrobrownheader-800 px-0.5'> we need</span> in difficult times</p>
+    <p class='font-Skie text-xl tracking-wide'>Big cities are known for having huge traffic congestion.
+      Therefore, such situations are suitable for car accidents.
+      That is why it is very important that we know how to react
+      in such situations. In addition to how important it is to
+      protect ourselves healthfully when car accidents...</p>
+      <div class='w-full flex justify-between items-center mt-20'>
+        <div class=''>
+        <p class='font-NothBlock text-lg'>Article by Thomas Spencer</p>
+          <div class='border-[1.9px] w-[45%] border-retrobrownheader-800' />
+      </div>
+        <p class='font-PODIUMSharp'>12/12/2022</p>
+      </div>
+  </div>
+</div>
