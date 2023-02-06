@@ -1,0 +1,40 @@
+---
+import articles from '../assets/imgs/retro-articles.jpg'
+import music from '../assets/imgs/retro-music.jpg'
+import art from '../assets/imgs/retro-art.jpg'
+import game from '../assets/imgs/retro-game.jpg'
+import travel from '../assets/imgs/retro-travel.jpg'
+import Article from './article.astro'
+
+const Articles = [
+{
+		title: 'Travel',
+		img: travel
+	},
+  {
+		title: 'Art',
+		img: art
+	},
+  {
+		title: 'Music',
+		img: music
+	},
+  {
+		title: 'Game',
+		img: game
+	},
+	{
+		title: 'Articles',
+		img: articles
+	}
+]
+---
+<div class='w-full overflow-x-scroll scrollbar-thin scrollbar-thumb-[#1F201F] scrollbar-track-[#EDEAE2] mb-20'>
+<div class='w-max flex gap-3'>
+	{
+		Articles.map(({ title, img }) => (
+			<Article title={title} img={img} />
+		))
+	}
+</div>
+</div>
