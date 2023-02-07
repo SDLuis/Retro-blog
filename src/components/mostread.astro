@@ -1,0 +1,38 @@
+---
+import music from '../assets/imgs/most-read-music.jpg'
+import retromusich from '../assets/imgs/retro-music-h.jpg'
+import retromusicl from '../assets/imgs/retro-music-l.jpg'
+
+---
+<div>
+	<div class='flex items-center mb-12'>
+		<p class='font-PODIUMSharp text-5xl z-10'>Most Read</p>
+		<div class='w-20 h-1.5 -ml-[34px] mt-2.5 bg-retrobrowntittle-800' />
+	</div>
+	<div class='flex gap-3 mb-10 items-center justify-between'>
+		<div class='lg:flex-[2] flex-[0.5] h-[170px] md:h-[350px]'>
+			<img src={retromusich} class='object-cover h-full w-full border-2 border-[#1F201F]' alt='' />
+		</div>
+		<div class='relative h-[250px] md:h-[350px] border-2 border-[#1F201F] lg:flex-[8] flex-[2]'>
+			<img src={music} class='w-full h-full object-cover' alt='' />
+			<div class='absolute overflow-y-hidden flex flex-col top-0 left-0 right-0 bottom-0 w-full h-full bg-[#00000080] p-2 md:p-4'>
+				<p class='xl:text-2xl text-xl font-PODIUMSharp tracking-wider capitalize text-[#EDEAE2] mb-2 xl:mb-4'>Let's talk about Music</p>
+				<p class='font-Skie tracking-wider capitalize text-[#EDEAE2] sm:text-justify'>Music, art concerned with combining vocal or instrumental sounds for beauty of form or
+    emotional expression, usually according to cultural standards of rhythm, melody, and, in most
+    Western music, harmony.
+				</p>
+				<p class='font-Skie tracking-wider capitalize text-[#EDEAE2] text-sm sm:text-base text-justify hidden md:block'>
+    Music is everywhere to be heard. But what is music? Commentators have spoken of "the
+    relationship of music to the human senses and intellect," thus affirming a world of human
+    discourse as the necessary setting for the art.</p> <p class='font-Skie tracking-wider capitalize text-sm sm:text-base text-[#EDEAE2] text-justify hidden lg:block'> A definition of music itself will take longer. As
+    Aristotle said, "It is not easy to determine the nature of music or why anyone should have a
+    knowledge of it."Early in the 20th century, it was regarded as a commonplace that a musical
+    tone was characterized by the regularity of its vibrations; this uniformity gave it a fixed pitch
+    and distinguished its sounds from "noise.</p>
+			</div>
+		</div>
+		<div class='h-[150px] md:h-[300px] lg:flex-[2] flex-[0.5]'>
+		  <img src={retromusicl} class='object-cover h-full w-full border-2 border-[#1F201F] max-w-[auto] lg:max-w-[65px]' alt='' />
+		</div>
+	</div>
+</div>
