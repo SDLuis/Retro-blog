@@ -1,0 +1,68 @@
+---
+import Articlecard from './articlecard.astro'
+import articlefilm1 from '../assets/imgs/article-film1.jpg'
+import articledesign1 from '../assets/imgs/article-design1.jpg'
+import articledesign2 from '../assets/imgs/article-design2.jpg'
+import articlemusic1 from '../assets/imgs/article-music1.jpg'
+import articlemusic2 from '../assets/imgs/article-music2.jpg'
+
+const articles = [
+	{
+		img: articlefilm1,
+		hashtag: 'FILM',
+		title: 'Sometimes that we need in difficult times',
+		description: 'Big cities are known for having huge traffic congestion. Therefore, such situations are suitable for car accidents. Therefore, such situations are suitable for car accidents',
+		date: '12/12/2022'
+	},
+	{
+		img: articledesign1,
+		hashtag: 'DESIGN',
+		title: 'How\'s everyone getting outside this winter',
+		description: 'Big cities are known for having huge traffic congestion. Therefore, such situations are suitable for car accidents. Therefore, such situations are suitable for car accidents',
+		date: '12/12/2022'
+	},
+	{
+		img: articledesign2,
+		hashtag: 'DESIGN',
+		title: 'Tip to choosing name a start as a christmas gift',
+		description: 'Name a star is an excellent way of purchasing and offering a great and unique gift to a friend, loved one or a colleague.',
+		date: '12/12/2022'
+	},
+	{
+		img: articlemusic1,
+		hashtag: 'MUSIC',
+		title: 'The power of music: how it can benefit health',
+		description: '"I think music in itself is healing," American musician Billy Joel once said. "It\' an explosive expression of humanity. It\' something',
+		date: '12/12/2022'
+	},
+	{
+		img: articlemusic2,
+		hashtag: 'MUSIC',
+		title: 'If you could have any job in the world, what would you choose?',
+		description: 'Maybe it\' the wintry weather, but lately i\'ve been craving easy bread-baking projects, even though any recipe involving yeast tends to scare me',
+		date: '12/12/2022'
+	},
+	{
+		img: articlemusic2,
+		hashtag: 'MUSIC',
+		title: 'If you could have any job in the world, what would you choose?',
+		description: 'Maybe it\' the wintry weather, but lately i\'ve been craving easy bread-baking projects, even though any recipe involving yeast tends to scare me',
+		date: '12/12/2022'
+	}
+
+]
+---
+
+<div class='w-full mb-20'>
+	<div class='flex items-center mb-12'>
+		<p class='font-PODIUMSharp text-5xl z-10'>Latest</p>
+		<div class='w-20 h-1.5 -ml-[34px] mt-2.5 bg-retrobrowntittle-800' />
+	</div>
+	<div class='grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between'>
+		{
+			articles.map(({ img, hashtag, title, description, date }) => (
+				<Articlecard img={img} hashtag={hashtag} title={title} description={description} date={date} />
+			))
+		}
+	</div>
+</div>
