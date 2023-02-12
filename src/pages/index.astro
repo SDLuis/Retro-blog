@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import PadingLayout from '../layouts/PadingLayout.astro'
 import Navbar from '../components/navbar.astro'
 import Header from '../components/header.astro'
 import Articles from '../components/articles.astro'
@@ -7,14 +8,31 @@ import Mostread from '../components/mostread.astro'
 import Preview1 from '../components/preview1.astro'
 import Latest from '../components/latest.astro'
 import Preview2 from '../components/preview2.astro'
+import Mostcommented from '../components/mostcommented.astro'
+import Advice from '../components/advice.astro'
+import Lastarticle from '../components/lastarticle.astro'
+import Theend from '../components/theend.astro'
 ---
-
-<Layout title='Welcome to Astro.'>
-	<Navbar />
-	<Header />
-	<Articles />
-	<Mostread />
-	<Preview1 />
-	<Latest />
-	<Preview2 />
-</Layout>
+<main class='flex flex-col items-center'>
+	<Layout title='Welcome to Astro.'>
+		<PadingLayout>
+			<Navbar />
+			<Header />
+			<Articles />
+			<Mostread />
+			<Preview1 />
+			<Latest />
+			<Preview2 />
+		</PadingLayout>
+		<div class='flex justify-center border-[3px] border-[#1F201F] py-10 px-20 mb-12'>
+			<div class='lg:w-[950px] md:w-[700px] px-4 md:px-0 flex gap-8 lg:gap-16 flex-col lg:flex-row'>
+				<Mostcommented />
+				<Advice />
+			</div>
+		</div>
+		<PadingLayout>
+			<Lastarticle />
+		</PadingLayout>
+		<Theend />
+	</Layout>
+</main>
