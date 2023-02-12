@@ -1,0 +1,55 @@
+---
+import Smallarticle from "./smallarticle.astro"
+import tone from '../assets/imgs/most-commented-tone.jpg'
+import music from '../assets/imgs/most-commented-music.jpg'
+import power from '../assets/imgs/most-commented-femalepower.jpg'
+import movie from '../assets/imgs/most-commented-movie.jpg'
+import party from '../assets/imgs/most-commented-beachparty.jpg'
+import sode from '../assets/imgs/most-commented-sodas.jpg'
+
+const articles = [
+  {
+    img: movie,
+    hashtag: 'FILM',
+    title: 'What\' the nicest thing anyone\s ever said you?'
+  },
+  {
+    img: power,
+    hashtag: 'Rights',
+    title: 'Warnning: Woman At Work'
+  },
+  {
+    img: party,
+    hashtag: 'Party',
+    title: 'How i learned to understand my dad'
+  },
+  {
+    img: music,
+    hashtag: 'Music',
+    title: 'Have you ever has a friendship breakup'
+  },
+  {
+    img: tone,
+    hashtag: 'Music',
+    title: 'What\' the nicest thing anyone\s ever said you?'
+  },
+  {
+    img: sode,
+    hashtag: 'Life',
+    title: 'Do your kids ever walk around alone?'
+  },
+]
+---
+<div>	
+  <div class='flex items-center mb-12'>
+  <p class='font-PODIUMSharp text-4xl z-10'>Most Commented</p>
+  <div class='w-20 h-1.5 -ml-[34px] mt-2.5 bg-retrobrowntittle-800' />
+</div>
+<div class='grid grid-cols-2 md:grid-cols-3 gap-3'>
+  {
+    articles.map(({ img, hashtag, title}) => (
+      <Smallarticle img={img} hashtag={hashtag} title={title} />
+    ))
+  }
+</div>
+</div>
