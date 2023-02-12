@@ -3,32 +3,32 @@ import wayyoulook from '../assets/imgs/wayyoulook-article.jpg'
 const hashtagLength = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ---
 
-<div class='flex flex-col md:flex-row w-full gap-5 md:gap-16 h-auto lg:h-[600px] mb-12'> 
-<div class='flex flex-col flex-1 justify-between text-justify'>
-  <p class='capitalize text-4xl font-PODIUMSharp mb-4 md:mb-0'>What Do You Love About the Way You Look?</p>
-  <p class='font-Skie'>
+<div class='flex flex-col md:flex-row w-full gap-5 md:gap-16 h-auto lg:h-[600px] mb-12'>
+	<div class='flex flex-col flex-1 justify-between text-justify'>
+		<p class='capitalize text-4xl font-PODIUMSharp mb-4 md:mb-0'>What Do You Love About the Way You Look?</p>
+		<p class='font-Skie'>
     I can't believe I'm typing this sentence, but I'm ready for fall. While I'm usually a champion of all things summer, I want to swap my espadrilles for chunky boots and jean shorts for printed slacks. The reason for my excitement is Only Murders in The Building, season two. I love many things about the Hulu comedy the hodgepodge cast of Martin Short, Steve Martin and Selena Gomez; cheesy one-liners; glimpses of New York architecture, and of course, the suspense of who (?!) is killing all the apartment residents. But the #1 thing that keeps me coming back each week is Selena's wardrobe. Here are the six looks I'm planning to recreate...
-    </p>
-    <p class='font-Skie hidden lg:block'>
+		</p>
+		<p class='font-Skie hidden lg:block'>
 Oversized sweater with knit pantsThis fall, I want to channel one word: cozy. And how much cuddlier does it get than a big sweater with knit pants? This ensemble is casual enough for daytime errands but has enough character for a fun lunch or art exhibit. To recreate, I'd wear this fleece sweater with these ribbed pants.Faux fur coat with flared pantsWhen someone wears faux fur, they're shouting into the atmosphere, "I LOVE GLAMOUR AND I DON'T CARE WHO KNOWS IT!" In this look, Selena takes extra to the next level by wearing a cape. But she pairs it with simple flared pants, which keep the outfit from looking costume-y. I'm not a cape woman, so I'd wear this faux fur jacket with flared pants. (Side note: We debated whether this jacket was faux fur or velvet. If you are team velvet..
-  </p>
-  <div class='w-full flex justify-between items-center mt-2'>
-    <div class=''>
-      <p class='font-NothBlock text-lg'>Article by Thomas Spencer</p>
-      <div class='border-[1.9px] w-[45%] border-retrobrownheader-800' />
-    </div>
-    <p class='font-PODIUMSharp tracking-wide'>12/12/2022</p>
-  </div>
-</div>
-<div class='relative w-full md:flex-1 h-auto md:h-full overflow-y-hidden'>
-  <img class='w-full md:h-full object-cover border-2 border-[#1F201F]' src={wayyoulook} />
-  <div class='absolute flex flex-col gap-7 right-2 top-3'>
-    { hashtagLength.map(() => (
-      <div class='bg-white px-2 py-0.5 -rotate-90 border-2 border-black'>
-        <p class='font-PODIUMSharp text-lg'>DESIGN</p>
-      </div>
-    ))
-    }
-  </div>
-</div>
+		</p>
+		<div class='w-full flex justify-between items-center mt-2'>
+			<div class=''>
+				<p class='font-NothBlock text-lg'>Article by Thomas Spencer</p>
+				<div class='border-[1.9px] w-[45%] border-retrobrownheader-800' />
+			</div>
+			<p class='font-PODIUMSharp tracking-wide'>12/12/2022</p>
+		</div>
+	</div>
+	<div class='relative w-full md:flex-1 h-auto md:h-full overflow-y-hidden'>
+		<img class='w-full md:h-full object-cover border-2 border-[#1F201F]' src={wayyoulook} />
+		<div class='absolute flex flex-col gap-7 right-2 top-3'>
+			{ hashtagLength.map(() => (
+				<div class='bg-white px-2 py-0.5 -rotate-90 border-2 border-black'>
+					<p class='font-PODIUMSharp text-lg'>DESIGN</p>
+				</div>
+			))
+			}
+		</div>
+	</div>
 </div>
