@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import PadingLayout from '../layouts/PadingLayout.astro'
 import Navbar from '../components/navbar.astro'
 import Header from '../components/header.astro'
 import Articles from '../components/articles.astro'
@@ -14,8 +13,9 @@ import Lastarticle from '../components/lastarticle.astro'
 import Theend from '../components/theend.astro'
 ---
 <main class='flex flex-col items-center'>
-	<Layout title='Welcome to Astro.'>
-		<PadingLayout>
+	<Layout title='Retro Blog' description='Best retro blog of the world'>
+		<div class='bg-[#EDEAE2] text-black flex justify-center w-full'>
+			<div class='lg:w-[950px] md:w-[700px] w-screen px-4 md:px-0'>
 			<Navbar />
 			<Header />
 			<Articles />
@@ -23,16 +23,19 @@ import Theend from '../components/theend.astro'
 			<Preview1 />
 			<Latest />
 			<Preview2 />
-		</PadingLayout>
+		</div>
+	</div>
 		<div class='flex justify-center border-[3px] border-[#1F201F] py-10 px-20 mb-12'>
 			<div class='lg:w-[950px] md:w-[700px] px-4 md:px-0 flex gap-8 lg:gap-16 flex-col lg:flex-row'>
 				<Mostcommented />
 				<Advice />
 			</div>
 		</div>
-		<PadingLayout>
+		<div class='bg-[#EDEAE2] text-black flex justify-center w-full'>
+			<div class='lg:w-[950px] md:w-[700px] w-screen px-4 md:px-0'>
 			<Lastarticle />
-		</PadingLayout>
+		</div>
+	</div>
 		<Theend />
 	</Layout>
 </main>
