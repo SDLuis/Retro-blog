@@ -5,10 +5,10 @@
 @font-face {
   font-family: 'PODIUMSharp';
   src: url('/src/assets/fonts/PODIUMSharp-3.8/PODIUMSharp-3.8.otf') format('otf');
-  font-display: fallback;
+  font-display: block;
 }
 @font-face {
   font-family: 'North Block';
   src: url('/src/assets/fonts/North-Block/BoxTube\ Labs\ -\ North\ Block.ttf') format('ttf');
-  font-display: fallback;
+  font-display: block;
 }
