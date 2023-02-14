@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PODIUMSharp';
+  src: url('/src/assets/fonts/PODIUMSharp-3.8/PODIUMSharp-3.8.otf');
+}
+@font-face {
+  font-family: 'North Block';
+  src: url('/src/assets/fonts/North-Block/BoxTube\ Labs\ -\ North\ Block.ttf');
+}

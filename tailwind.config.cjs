@@ -17,8 +17,9 @@ module.exports = {
 				}
 			},
 			fontFamily: {
-				Bruzh: ['Bruzh', 'sans-serif'],
-				Skie: ['Skie Condensed', 'sans-serif']
+				PODIUMSharp: ['PODIUMSharp', 'sans-serif'],
+				Skie: ['Skie Condensed', 'sans-serif'],
+				NothBlock: ['North Block', 'sans-serif']
 			}
 		}
 	},
